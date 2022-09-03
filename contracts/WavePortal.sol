@@ -1,27 +1,27 @@
 // SPDX-License-Identifier: UNLICENSED
 
-pragma solidity ^0.8.0;
+pragma solidity ^0.8.0; //Solidity version.
 
-import 'hardhat/console.sol';
+import 'hardhat/console.sol'; //Using console.log on solidity (thanks to hardhat)
 
 contract WavePortal{
-    uint256 totalWaves;
+    uint256 totalWaves; //State variable
 
     constructor(){
-        console.log('Smart contract working :)');
+        console.log('Smart contract working :)'); 
+        //When the smart contract is deployed / compiled, it logs this.
     }
 
-
     function wave() public {
-        totalWaves += 1;
+        totalWaves += 1; 
         console.log('%s has waved! :) ', msg.sender);
-
+        //Shows the addres of the person who waved us by console.
     }
 
     function getTotalWaves() public view returns(uint) {
         console.log('Total Waves: %d', totalWaves);
         return (totalWaves);
-
+        //Returns the totalwaves count
     }
 
 
@@ -49,5 +49,5 @@ contract WavePortal{
 //Global Variables = Stores info such as blockchain transactions and account that calls the funct.
 
 
-// View function = Reads info from the blockchain (state-global variable/smart contract/adress)
-// Pure function = Not reads/modify anything in the blockchain
+//View function = Reads info from the blockchain (state-global variable/smart contract/adress)
+//Pure function = Not reads/modify anything in the blockchain
