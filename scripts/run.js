@@ -1,6 +1,6 @@
-// The run file help us to compile the code of the contract file (in this case WavePortal.sol)
-// Hardhat creates a local Ethereum network for us, and after the script completes
-// the file, it'll detroy. Every time we run the contract, it'll be a fresh blockchain.
+//The run file help us to compile the code of the contract file (in this case WavePortal.sol)
+//Hardhat creates a local Ethereum network for us, and after the script completes
+//the file, it'll detroy. Every time we run the contract, it'll be a fresh blockchain.
 
 const main = async () => {
     const [owner, randomPerson] = await hre.ethers.getSigners(); 
@@ -16,7 +16,6 @@ const main = async () => {
     //Shows on screen the SC address on blockchain
     console.log('Contract deployed by:', owner.address);
     //Shows on screen the our address on blockchain
-
 
     let waveCount;
     waveCount = await waveContract.getTotalWaves(); 

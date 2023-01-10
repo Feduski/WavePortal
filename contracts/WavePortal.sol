@@ -24,7 +24,6 @@ contract WavePortal{
         //Returns the totalwaves count
     }
 
-
 }
 
 //External functions = We are be able to call this function when we deplot the contract

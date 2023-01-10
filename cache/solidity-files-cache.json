@@ -2,8 +2,8 @@
   "_format": "hh-sol-cache-2",
   "files": {
     "/home/feduski/Desktop/buildspace/contracts/WavePortal.sol": {
-      "lastModificationDate": 1661735279308,
-      "contentHash": "a2beaecadd122f40767e5f214d06328e",
+      "lastModificationDate": 1662223537537,
+      "contentHash": "bc3c214a0b08f20b2a284e46f3c4a1a0",
       "sourceName": "contracts/WavePortal.sol",
       "solcConfig": {
         "version": "0.8.0",

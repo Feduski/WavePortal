@@ -2,6 +2,8 @@
 //We have to create a node before we run this file.
 //npx hardhat node
 //npx hardhat run scripts/deploy.js --network localhost
+//to deplot it on the testnet
+//npx hardhat run scripts/deploy.js --network goerli
 
 const main = async () => {
     const [deployer] = await hre.ethers.getSigners(); //The deployer of the SC (we)
